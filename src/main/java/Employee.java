@@ -9,6 +9,7 @@ public class Employee {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
+        this.salary = salary;
     }
 
 
@@ -22,5 +23,9 @@ public class Employee {
 
     public int getAge() {
         return age;
+    }
+
+    public int getSalary() {
+        return salary;
     }
 }
