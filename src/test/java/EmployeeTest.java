@@ -6,5 +6,8 @@ class EmployeeTest {
     Employee testObject;
 
     @BeforeEach
-    
+    public void beforeEach() {
+        testObject = new Employee();
+    }
+
 }
