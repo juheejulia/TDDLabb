@@ -23,4 +23,9 @@ class EmployeeTest {
         String actual = testObject.getLastName();
         assertEquals("Kang",actual);
     }
+
+    @Test
+    public void testGetAge(){
+        int actual = testObject.getAge();
+    }
 }
