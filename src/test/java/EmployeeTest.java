@@ -29,4 +29,9 @@ class EmployeeTest {
         int actual = testObject.getAge();
         assertEquals(38,actual);
     }
+
+    @Test
+    public void testGetSalary(){
+        int actual = testObject.getSalary();
+    }
 }
