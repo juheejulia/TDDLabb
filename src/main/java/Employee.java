@@ -8,6 +8,7 @@ public class Employee {
     public Employee(String firstName, String lastName, int age, int salary){
         this.firstName = firstName;
         this.lastName = lastName;
+        this.age = age;
     }
 
 
