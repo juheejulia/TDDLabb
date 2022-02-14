@@ -4,13 +4,17 @@ public class Employee {
     private String lastName;
     private int age;
     private double salary;
-    private int ID;
+
+    private static int IDCounter;
+    private int id;
 
     public Employee(String firstName, String lastName, int age, double salary){
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.salary = salary;
+        IDCounter = IDCounter + 1;
+        this.id = IDCounter;
     }
 
 
@@ -30,7 +34,7 @@ public class Employee {
         return salary;
     }
 
-    public int getID() {
-        return ID;
+    public int getId() {
+        return id;
     }
 }

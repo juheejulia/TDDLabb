@@ -5,11 +5,13 @@ import org.junit.jupiter.api.Test;
 class EmployeeTest {
 
     Employee testObject;
+    Employee testObject2;
 
 
     @BeforeEach
     public void beforeEach(){
         testObject = new Employee("Juhee", "Kang", 38, 28000);
+        testObject2 = new Employee("d", "s", 2,1);
     }
 
     @Test
@@ -38,8 +40,17 @@ class EmployeeTest {
 
     @Test
     public void testGetID(){
-        int actual = testObject.getID();
+        int actual = testObject.getId();
         assertEquals(1,actual);
     }
+
+    @Test
+    public void testIDIncrement(){
+        int actual = testObject2.getId();
+        assertEquals(2, actual);
+
+        assertNotEquals(testObject.getId(),testObject2.getId());
+    }
+
 
 }
