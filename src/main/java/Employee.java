@@ -1,5 +1,14 @@
 public class Employee {
-    public String getFirstName() {
-        return "";
+
+    private String firstName;
+
+    public Employee(String firstName){
+        this.firstName = firstName;
     }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+
 }

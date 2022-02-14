@@ -1,3 +1,4 @@
+import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,5 +14,6 @@ class EmployeeTest {
     @Test
     public void testGetName(){
         String actual = testObject.getFirstName();
+        assertEquals("Juhee",actual);
     }
 }
