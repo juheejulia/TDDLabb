@@ -11,4 +11,7 @@ class EmployeeTest {
     }
 
     @Test
+    public void testGetName(){
+        String actual = testObject.getFirstName();
+    }
 }
