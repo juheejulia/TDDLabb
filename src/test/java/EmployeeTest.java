@@ -33,5 +33,12 @@ class EmployeeTest {
     @Test
     public void testGetSalary(){
         int actual = testObject.getSalary();
+        assertEquals(28000, actual);
     }
+
+    @Test
+    public void testGetID(){
+        int actual = testObject.getID();
+    }
+
 }
