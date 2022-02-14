@@ -6,15 +6,11 @@ class EmployeeTest {
 
     Employee testObject;
 
-    @BeforeEach
-    public void beforeEach() {
-        testObject = new Employee("Juhee");
-    }
 
     @Test
     public void testGetFirstName(){
+        testObject = new Employee("Juhee");
         String actual = testObject.getFirstName();
         assertEquals("Juhee",actual);
     }
-
 }
