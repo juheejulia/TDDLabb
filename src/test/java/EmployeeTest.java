@@ -39,6 +39,7 @@ class EmployeeTest {
     @Test
     public void testGetID(){
         int actual = testObject.getID();
+        assertEquals(1,actual);
     }
 
 }
