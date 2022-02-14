@@ -13,4 +13,10 @@ class EmployeeTest {
         String actual = testObject.getFirstName();
         assertEquals("Juhee",actual);
     }
+
+    @Test
+    public void testGetLastName(){
+        testObject = new Employee("Kang");
+        String actual = testObject.getLastName();
+    }
 }
