@@ -7,16 +7,20 @@ class EmployeeTest {
     Employee testObject;
 
 
+    @BeforeEach
+    public void beforeEach(){
+        testObject = new Employee("Juhee", "Kang", 38, 28000);
+    }
+
     @Test
     public void testGetFirstName(){
-        testObject = new Employee("Juhee");
         String actual = testObject.getFirstName();
         assertEquals("Juhee",actual);
     }
 
     @Test
     public void testGetLastName(){
-        testObject = new Employee("Kang");
         String actual = testObject.getLastName();
+        assertEquals("Kang",actual);
     }
 }
