@@ -10,4 +10,5 @@ class EmployeeTest {
         testObject = new Employee();
     }
 
+    @Test
 }
