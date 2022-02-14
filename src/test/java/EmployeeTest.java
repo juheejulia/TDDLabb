@@ -8,7 +8,7 @@ class EmployeeTest {
 
     @BeforeEach
     public void beforeEach() {
-        testObject = new Employee();
+        testObject = new Employee("Juhee");
     }
 
     @Test
