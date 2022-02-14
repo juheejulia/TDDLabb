@@ -32,7 +32,7 @@ class EmployeeTest {
 
     @Test
     public void testGetSalary(){
-        int actual = testObject.getSalary();
+        double actual = testObject.getSalary();
         assertEquals(28000, actual);
     }
 
