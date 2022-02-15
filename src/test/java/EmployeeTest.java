@@ -11,7 +11,7 @@ class EmployeeTest {
     @BeforeEach
     public void beforeEach(){
         testObject = new Employee("Juhee", "Kang", 38, 28000);
-        testObject2 = new Employee("d", "s", 2,1);
+        testObject2 = new Employee("Felicia", "Monti", 25,30000);
     }
 
     @Test
