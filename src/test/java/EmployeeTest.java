@@ -21,6 +21,12 @@ class EmployeeTest {
     }
 
     @Test
+    public void testSetFirstName(){
+        String myFirtstName = "Saga";
+        testObject.setFirstName(myFirtstName);
+    }
+
+    @Test
     public void testGetLastName(){
         String actual = testObject.getLastName();
         assertEquals("Kang",actual);
