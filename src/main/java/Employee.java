@@ -17,6 +17,8 @@ public class Employee {
         this.id = IDCounter;
     }
 
+    public void setFirstName(String firstName){
+    }
 
     public String getFirstName() {
         return firstName;
