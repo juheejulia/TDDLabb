@@ -76,16 +76,9 @@ class EmployeeTest {
 
     @Test
     public void testGetID(){
-        int actual = testObject.getId();
-        assertEquals(1,actual);
-    }
-
-
-    @Test
-    public void testIDIncrement(){
         int actual = testObject2.getId();
-        assertEquals(2, actual);
-        assertNotEquals(testObject.getId(),testObject2.getId());
+        int expected = testObject.getId()+1;
+        assertEquals(expected,actual);
     }
 
 }
