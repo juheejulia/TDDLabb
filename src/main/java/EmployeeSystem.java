@@ -17,4 +17,5 @@ public class EmployeeSystem {
     public void removeEmployee(Employee newEmployee) {
         listOfEmployees.remove(newEmployee);
     }
+
 }
