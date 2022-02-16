@@ -58,6 +58,16 @@ class EmployeeTest {
         assertEquals(28,actual);
     }
 
+
+    @Test
+    public void testSetSalary(){
+        int mySalary = 35000;
+        testObject.setSalary(mySalary);
+        assertEquals(mySalary, testObject.getSalary());
+        System.out.println(mySalary);
+    }
+
+
     @Test
     public void testGetSalary(){
         double actual = testObject.getSalary();
