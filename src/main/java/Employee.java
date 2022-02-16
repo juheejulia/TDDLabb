@@ -33,6 +33,10 @@ public class Employee {
         return lastName;
     }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     public int getAge() {
         return age;
     }
@@ -44,6 +48,7 @@ public class Employee {
     public int getId() {
         return id;
     }
+
 
 
 }

@@ -46,7 +46,7 @@ class EmployeeTest {
 
     @Test
     public void testSetAge(){
-        int myAge = 34;
+        int myAge = 30;
         testObject.setAge(myAge);
         assertEquals(myAge,testObject.getAge());
     }
