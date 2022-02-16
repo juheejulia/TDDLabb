@@ -13,4 +13,8 @@ public class EmployeeSystem {
         return this.listOfEmployees;
 
     }
+
+    public void removeEmployee(Employee newEmployee) {
+        listOfEmployees.remove(newEmployee);
+    }
 }

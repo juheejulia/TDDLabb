@@ -32,16 +32,16 @@ public class EmployeeSystemTest {
 
     @Test
     public void testRemoveAnEmployee(){
-        Employee newEmployee = new Employee("Bob","Tester", 33, 40000);
-        employeeSystem.addEmployee(newEmployee);
+        Employee newEmployee1 = new Employee("Bob","Tester", 33, 40000);
+        employeeSystem.addEmployee(newEmployee1);
         Employee newEmployee2 = new Employee("Harry","Porter", 40, 50000);
         employeeSystem.addEmployee(newEmployee2);
-        Employee newEmployee3 = new Employee("Lille","Skutt", 45, 39000);
-        employeeSystem.addEmployee(newEmployee3);
         ArrayList<Employee> employeesFromSystem = employeeSystem.getListOfEmployees();
-        assertEquals("Lille", employeesFromSystem.get(2).getFirstName());
-        employeeSystem.removeEmployee(newEmployee);
-        assertNotEquals("Bob",employeesFromSystem.get(0).getFirstName());
+        //employeesFromSystem.forEach(value -> System.out.println(value.getFirstName()));
+        //System.out.println(" ");
+        employeeSystem.removeEmployee(newEmployee1);
+        assertEquals("Harry",employeesFromSystem.get(0).getFirstName());
+        //employeesFromSystem.forEach(value -> System.out.println(value.getFirstName()));
     }
 
 }
