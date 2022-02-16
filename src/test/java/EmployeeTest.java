@@ -14,25 +14,29 @@ class EmployeeTest {
         testObject2 = new Employee("Alfons", "Åberg", 21,28000);
     }
 
+
+    @Test
+    public void testSetFirstName(){
+        String myFirstName = "Bamse";
+        testObject.setFirstName(myFirstName);
+        assertEquals(myFirstName, testObject.getFirstName());
+    }
+
+
     @Test
     public void testGetFirstName(){
         String actual = testObject.getFirstName();
         assertEquals("Pippi",actual);
     }
 
-    @Test
-    public void testSetFirstName(){
-        String myFirtstName = "Bamse";
-        testObject.setFirstName(myFirtstName);
-        assertEquals(myFirtstName, testObject.getFirstName());
-    }
 
     @Test
     public void testSetLastName(){
         String myLastName = "Sjöberg";
         testObject.setLastName(myLastName);
-        assertEquals(myLastName, testObject.setLastName());
+        assertEquals(myLastName, testObject.getLastName());
     }
+
 
     @Test
     public void testGetLastName(){
