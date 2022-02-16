@@ -10,19 +10,19 @@ class EmployeeTest {
 
     @BeforeEach
     public void beforeEach(){
-        testObject = new Employee("Juhee", "Kang", 38, 28000);
-        testObject2 = new Employee("Felicia", "Monti", 25,30000);
+        testObject = new Employee("Pippi", "Långstrump", 28, 30000);
+        testObject2 = new Employee("Alfons", "Åberg", 21,28000);
     }
 
     @Test
     public void testGetFirstName(){
         String actual = testObject.getFirstName();
-        assertEquals("Juhee",actual);
+        assertEquals("Pippi",actual);
     }
 
     @Test
     public void testSetFirstName(){
-        String myFirtstName = "Saga";
+        String myFirtstName = "Bamse";
         testObject.setFirstName(myFirtstName);
         assertEquals(myFirtstName, testObject.getFirstName());
     }
@@ -30,19 +30,19 @@ class EmployeeTest {
     @Test
     public void testGetLastName(){
         String actual = testObject.getLastName();
-        assertEquals("Kang",actual);
+        assertEquals("Långstrump",actual);
     }
 
     @Test
     public void testGetAge(){
         int actual = testObject.getAge();
-        assertEquals(38,actual);
+        assertEquals(28,actual);
     }
 
     @Test
     public void testGetSalary(){
         double actual = testObject.getSalary();
-        assertEquals(28000, actual);
+        assertEquals(30000, actual);
     }
 
     @Test
