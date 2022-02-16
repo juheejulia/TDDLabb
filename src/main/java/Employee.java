@@ -41,6 +41,10 @@ public class Employee {
         return age;
     }
 
+    public void setSalary(int mySalary) {
+        this.salary = mySalary;
+    }
+
     public double getSalary() {
         return salary;
     }

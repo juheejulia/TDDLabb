@@ -64,7 +64,6 @@ class EmployeeTest {
         int mySalary = 35000;
         testObject.setSalary(mySalary);
         assertEquals(mySalary, testObject.getSalary());
-        System.out.println(mySalary);
     }
 
 
