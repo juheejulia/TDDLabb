@@ -28,6 +28,13 @@ class EmployeeTest {
     }
 
     @Test
+    public void testSetLastName(){
+        String myLastName = "Sjöberg";
+        testObject.setLastName(myLastName);
+        assertEquals(myLastName, testObject.setLastName());
+    }
+
+    @Test
     public void testGetLastName(){
         String actual = testObject.getLastName();
         assertEquals("Långstrump",actual);
