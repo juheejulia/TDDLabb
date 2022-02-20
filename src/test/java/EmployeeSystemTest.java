@@ -72,5 +72,4 @@ public class EmployeeSystemTest {
         assertEquals(50000,newEmployee2.getSalary());
         assertEquals(42000,newEmployee3.getSalary());
     }
-
 }
