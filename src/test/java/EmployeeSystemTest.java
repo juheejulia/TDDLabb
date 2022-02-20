@@ -67,7 +67,7 @@ public class EmployeeSystemTest {
         employeeSystem.addEmployee(newEmployee2);
         Employee newEmployee3 = new Employee("Bamse","Sjöberg", 38, 35000);
         employeeSystem.addEmployee(newEmployee3);
-        employeeSystem.increaseSalaryOfEmployeesByPercent(20,3);
+        employeeSystem.increaseSalaryOfEmployeeByPercent(20,3);
         assertEquals(40000,newEmployee1.getSalary());
         assertEquals(50000,newEmployee2.getSalary());
         assertEquals(42000,newEmployee3.getSalary());

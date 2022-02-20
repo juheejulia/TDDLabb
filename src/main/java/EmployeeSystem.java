@@ -29,4 +29,18 @@ public class EmployeeSystem {
             }
         }
     }
+
+    public void increaseSalaryOfEmployeeByPercent(double percentage, int id) {
+        for (int i=0; i<listOfEmployees.toArray().length; i++){
+            Employee employee = listOfEmployees.get(i);
+            if(id == employee.getId()){
+                double newSalary = employee.getSalary() + employee.getSalary() * percentage / 100;
+                if(percentage < 100){
+                    employee.setSalary(newSalary);
+                } else {
+                    System.out.println("Salary will not be increased 100%.");
+                }
+            }
+        }
+    }
 }
