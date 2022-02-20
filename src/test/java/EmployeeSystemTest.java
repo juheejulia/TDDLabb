@@ -22,7 +22,7 @@ public class EmployeeSystemTest {
         assertEquals("Bob", employeesFromSystem.get(0).getFirstName());
         assertEquals("Tester", employeesFromSystem.get(0).getLastName());
         assertEquals(33, employeesFromSystem.get(0).getAge());
-        assertEquals(40000, employeesFromSystem.get(0).getSalary());
+        assertEquals(40000.00, employeesFromSystem.get(0).getSalary());
     }
 
 
@@ -45,7 +45,7 @@ public class EmployeeSystemTest {
         employeeSystem.addEmployee(newEmployee2);
         employeeSystem.increaseSalaryOfAllEmployeesByPercent(10);
         assertEquals(44000,newEmployee1.getSalary());
-        assertEquals(55000,newEmployee1.getSalary());
+        assertEquals(55000,newEmployee2.getSalary());
 
     }
 }

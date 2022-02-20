@@ -18,4 +18,11 @@ public class EmployeeSystem {
         listOfEmployees.remove(newEmployee);
     }
 
+    public void increaseSalaryOfAllEmployeesByPercent(double percentage) {
+        for (int i=0; i<listOfEmployees.toArray().length; i++){
+            Employee employee = listOfEmployees.get(i); //hämta varje anställda
+            double newSalary = employee.getSalary() + employee.getSalary() * percentage / 100;
+            employee.setSalary(newSalary);
+        }
+    }
 }
