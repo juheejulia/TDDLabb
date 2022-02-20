@@ -46,6 +46,16 @@ public class EmployeeSystemTest {
         employeeSystem.increaseSalaryOfAllEmployeesByPercent(10);
         assertEquals(44000,newEmployee1.getSalary());
         assertEquals(55000,newEmployee2.getSalary());
+    }
 
+    @Test
+    public void testItWillNotIncreaseMoreThanAHundreadPercent(){
+        Employee newEmployee1 = new Employee("Bob","Tester", 33, 40000);
+        employeeSystem.addEmployee(newEmployee1);
+        Employee newEmployee2 = new Employee("Harry","Porter", 40, 50000);
+        employeeSystem.addEmployee(newEmployee2);
+        employeeSystem.increaseSalaryOfAllEmployeesByPercent(100);
+        assertEquals(40000,newEmployee1.getSalary());
+        assertEquals(50000,newEmployee2.getSalary());
     }
 }
