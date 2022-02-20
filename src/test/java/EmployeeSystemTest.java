@@ -37,4 +37,15 @@ public class EmployeeSystemTest {
         assertEquals("Harry",employeesFromSystem.get(0).getFirstName());
     }
 
+    @Test
+    public void testIncreaseSalaryOfAllEmployeesByPercent(){
+        Employee newEmployee1 = new Employee("Bob","Tester", 33, 40000);
+        employeeSystem.addEmployee(newEmployee1);
+        Employee newEmployee2 = new Employee("Harry","Porter", 40, 50000);
+        employeeSystem.addEmployee(newEmployee2);
+        employeeSystem.increaseSalaryOfAllEmployeesByPercent(10);
+        assertEquals(44000,newEmployee1.getSalary());
+        assertEquals(55000,newEmployee1.getSalary());
+
+    }
 }
