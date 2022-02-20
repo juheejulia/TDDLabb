@@ -4,28 +4,28 @@ import org.junit.jupiter.api.Test;
 
 class EmployeeTest {
 
-    Employee testObject;
-    Employee testObject2;
+    Employee employee1;
+    Employee employee2;
 
 
     @BeforeEach
     public void beforeEach(){
-        testObject = new Employee("Pippi", "Långstrump", 28, 30000);
-        testObject2 = new Employee("Alfons", "Åberg", 21,28000);
+        employee1 = new Employee("Pippi", "Långstrump", 28, 30000);
+        employee2 = new Employee("Alfons", "Åberg", 21,28000);
     }
 
 
     @Test
     public void testSetFirstName(){
         String myFirstName = "Bamse";
-        testObject.setFirstName(myFirstName);
-        assertEquals(myFirstName, testObject.getFirstName());
+        employee1.setFirstName(myFirstName);
+        assertEquals(myFirstName, employee1.getFirstName());
     }
 
 
     @Test
     public void testGetFirstName(){
-        String actual = testObject.getFirstName();
+        String actual = employee1.getFirstName();
         assertEquals("Pippi",actual);
     }
 
@@ -33,28 +33,28 @@ class EmployeeTest {
     @Test
     public void testSetLastName(){
         String myLastName = "Sjöberg";
-        testObject.setLastName(myLastName);
-        assertEquals(myLastName, testObject.getLastName());
+        employee1.setLastName(myLastName);
+        assertEquals(myLastName, employee1.getLastName());
     }
 
 
     @Test
     public void testGetLastName(){
-        String actual = testObject.getLastName();
+        String actual = employee1.getLastName();
         assertEquals("Långstrump",actual);
     }
 
     @Test
     public void testSetAge(){
         int myAge = 30;
-        testObject.setAge(myAge);
-        assertEquals(myAge,testObject.getAge());
+        employee1.setAge(myAge);
+        assertEquals(myAge, employee1.getAge());
     }
 
 
     @Test
     public void testGetAge(){
-        int actual = testObject.getAge();
+        int actual = employee1.getAge();
         assertEquals(28,actual);
     }
 
@@ -62,22 +62,22 @@ class EmployeeTest {
     @Test
     public void testSetSalary(){
         int mySalary = 35000;
-        testObject.setSalary(mySalary);
-        assertEquals(mySalary, testObject.getSalary());
+        employee1.setSalary(mySalary);
+        assertEquals(mySalary, employee1.getSalary());
     }
 
 
     @Test
     public void testGetSalary(){
-        double actual = testObject.getSalary();
+        double actual = employee1.getSalary();
         assertEquals(30000, actual);
     }
 
 
     @Test
     public void testGetID(){
-        int actual = testObject2.getId();
-        int expected = testObject.getId()+1;
+        int actual = employee2.getId();
+        int expected = employee1.getId()+1;
         assertEquals(expected,actual);
     }
 
