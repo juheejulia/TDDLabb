@@ -49,7 +49,7 @@ public class EmployeeSystemTest {
     }
 
     @Test
-    public void testItWillNotIncreaseMoreThanAHundreadPercent(){
+    public void testTheSalaryWillNotIncreaseMoreThanAHundreadPercent(){
         Employee newEmployee1 = new Employee("Bob","Tester", 33, 40000);
         employeeSystem.addEmployee(newEmployee1);
         Employee newEmployee2 = new Employee("Harry","Porter", 40, 50000);
