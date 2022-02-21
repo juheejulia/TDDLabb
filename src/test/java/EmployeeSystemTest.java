@@ -73,4 +73,18 @@ public class EmployeeSystemTest {
         assertEquals(42000,newEmployee3.getSalary());
     }
 
+    @Test
+    public void testIncreaseSalaryOfASpecificEmployeeOutOfPercentage(){
+        Employee newEmployee1 = new Employee("Bob","Tester", 33, 40000);
+        employeeSystem.addEmployee(newEmployee1);
+        Employee newEmployee2 = new Employee("Harry","Porter", 40, 50000);
+        employeeSystem.addEmployee(newEmployee2);
+        Employee newEmployee3 = new Employee("Bamse","Sjöberg", 38, 35000);
+        employeeSystem.addEmployee(newEmployee3);
+        employeeSystem.increaseSalaryOfEmployeeByPercent(101,newEmployee3.getId());
+        assertEquals(40000,newEmployee1.getSalary());
+        assertEquals(50000,newEmployee2.getSalary());
+        assertEquals(35000,newEmployee3.getSalary());
+    }
+
 }
