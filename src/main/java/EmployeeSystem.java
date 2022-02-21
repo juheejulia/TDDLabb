@@ -22,10 +22,10 @@ public class EmployeeSystem {
         for (int i=0; i<listOfEmployees.toArray().length; i++){
             Employee employee = listOfEmployees.get(i); //hämta varje anställda
             double newSalary = employee.getSalary() + employee.getSalary() * percentage / 100;
-            if(percentage < 100){
+            if(percentage <= 100 && percentage > 0){
                 employee.setSalary(newSalary);
             } else {
-                System.out.println("Salary will not be increased 100%.");
+                System.out.println("Salary will not be increased more than 100%.");
             }
         }
     }
@@ -35,10 +35,10 @@ public class EmployeeSystem {
             Employee employee = listOfEmployees.get(i);
             if(id == employee.getId()){
                 double newSalary = employee.getSalary() + employee.getSalary() * percentage / 100;
-                if(percentage < 100){
+                if(percentage <= 100 && percentage > 0){
                     employee.setSalary(newSalary);
                 } else {
-                    System.out.println("Salary will not be increased 100%.");
+                    System.out.println("Salary will not be increased more than 100%.");
                 }
             }
         }

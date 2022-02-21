@@ -54,7 +54,7 @@ public class EmployeeSystemTest {
         employeeSystem.addEmployee(newEmployee1);
         Employee newEmployee2 = new Employee("Harry","Porter", 40, 50000);
         employeeSystem.addEmployee(newEmployee2);
-        employeeSystem.increaseSalaryOfAllEmployeesByPercent(100);
+        employeeSystem.increaseSalaryOfAllEmployeesByPercent(101);
         assertEquals(40000,newEmployee1.getSalary());
         assertEquals(50000,newEmployee2.getSalary());
     }
@@ -67,9 +67,10 @@ public class EmployeeSystemTest {
         employeeSystem.addEmployee(newEmployee2);
         Employee newEmployee3 = new Employee("Bamse","Sjöberg", 38, 35000);
         employeeSystem.addEmployee(newEmployee3);
-        employeeSystem.increaseSalaryOfEmployeeByPercent(20,3);
+        employeeSystem.increaseSalaryOfEmployeeByPercent(20,newEmployee3.getId());
         assertEquals(40000,newEmployee1.getSalary());
         assertEquals(50000,newEmployee2.getSalary());
         assertEquals(42000,newEmployee3.getSalary());
     }
+
 }
