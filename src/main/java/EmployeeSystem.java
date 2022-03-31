@@ -30,6 +30,7 @@ public class EmployeeSystem {
         }
     }
 
+
     public void increaseSalaryOfEmployeeByPercent(double percentage, int id) {
         for (int i=0; i<listOfEmployees.toArray().length; i++){
             Employee employee = listOfEmployees.get(i);
